@@ -1891,9 +1891,9 @@ a:active {
     opacity: 1
 }
 
-.site-description {
-    float: right
-}
+//.site-description {
+//    float: right
+//}
 
 .header-focus {
     height: 250px;
