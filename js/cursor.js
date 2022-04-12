@@ -82,14 +82,14 @@
   
   function Particle() {
 
-    this.character = "*";
-    this.lifeSpan = 120; //ms
+    this.character = "❀";
+    this.lifeSpan = 80; //ms
     this.initialStyles ={
       "position": "fixed",
       "top": "0", //必须加
       "display": "block",
       "pointerEvents": "none",
-      "z-index": "10000000",
+      "z-index": "1000000",
       "fontSize": "20px",
       "will-change": "transform"
     };
