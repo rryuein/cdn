@@ -82,7 +82,7 @@
   
   function Particle() {
 
-    this.character = "✿";
+    this.character = "+";
     this.lifeSpan = 80; //ms
     this.initialStyles ={
       "position": "fixed",
@@ -90,7 +90,7 @@
       "display": "block",
       "pointerEvents": "none",
       "z-index": "1000000",
-      "fontSize": "20px",
+      "fontSize": "10px",
       "will-change": "transform"
     };
 
