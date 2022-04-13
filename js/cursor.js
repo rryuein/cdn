@@ -82,15 +82,15 @@
   
   function Particle() {
 
-    this.character = "+";
-    this.lifeSpan = 80; //ms
+    this.character = "❀";
+    this.lifeSpan = 40; //ms
     this.initialStyles ={
       "position": "fixed",
       "top": "0", //必须加
       "display": "block",
       "pointerEvents": "none",
-      "z-index": "1000000",
-      "fontSize": "10px",
+      "z-index": "5",
+      "fontSize": "40px",
       "will-change": "transform"
     };
 
@@ -98,11 +98,11 @@
     this.init = function(x, y, color) {
 
       this.velocity = {
-        x:  (Math.random() < 0.5 ? -1 : 1) * (Math.random() / 2),
+        x:  (Math.random() < 0.5 ? -1 : 1) * (Math.random() / 1.5),
         y: 1
       };
       
-      this.position = {x: x - 10, y: y - 20};
+      this.position = {x: x - 10, y: y - 15};
       this.initialStyles.color = color;
       //console.log(color);
 
@@ -119,7 +119,7 @@
       this.position.y += this.velocity.y;
       this.lifeSpan--;
       
-      this.element.style.transform = "translate3d(" + this.position.x + "px," + this.position.y + "px,0) scale(" + (this.lifeSpan / 120) + ")";
+      this.element.style.transform = "translate3d(" + this.position.x + "px," + this.position.y + "px,0) scale(" + (this.lifeSpan / 180) + ")";
     }
     
     this.die = function() {
