@@ -8,7 +8,7 @@
 //鼠标点击雪花特效
 (function fairyDustCursor() {
   
-  var possibleColors = ["#D61C59", "#E7D84B", "#1B8798"]
+  var possibleColors = ["#f6cbba", "#fadcf5", "#f9d2e3"]
   var width = window.innerWidth;
   var height = window.innerHeight;
   var cursor = {x: width/2, y: width/2};
