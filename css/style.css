@@ -1838,7 +1838,7 @@ a:active {
 .yya {
     position: fixed;
     left: 0;
-    background: rgba(255, 255, 255, .95);
+    background: rgba(255,240,240, .95);
     box-shadow: 0 1px 40px -8px rgba(0, 0, 0, .5)
 }
 
