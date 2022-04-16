@@ -1935,7 +1935,7 @@ a:active {
 
 @media(max-width:1200px) {
     .site-top .lower {
-        left: 280px
+        left: 30%
     }
 
     .site-top .lower-cantiner {
