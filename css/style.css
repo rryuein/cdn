@@ -1585,15 +1585,6 @@ a:active {
     position: absolute
 }
 
-.pattern-attachment-img {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-origin: border-box;
-    width: 100%;
-    height: 400px
-}
-
 .pattern-center header.pattern-header {
     position: absolute;
     top: 45%;
@@ -1723,8 +1714,10 @@ a:active {
     background-size: cover;
     background-position: center center;
     background-origin: border-box;
-    width: 100%;
-    height: 400px
+    width: 85%;
+    -webkit-filter: blur(4px);
+    margin: auto;
+    height: 420px;
 }
 
 .pattern-center-sakura header.pattern-header {
