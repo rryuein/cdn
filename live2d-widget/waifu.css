@@ -5,7 +5,7 @@
 	color: #fff;
 	cursor: pointer;
 	font-size: 12px;
-	left: 0;
+	left: 10px;
 	margin-left: -100px;
 	padding: 5px 2px 5px 5px;
 	position: fixed;
@@ -95,7 +95,7 @@
 
 #waifu-tool span {
 	color: #5b6c7d;
-	cursor: pointer;
+	cursor: url(https://cdn.jsdelivr.net/gh/rryuein/cdn/img/cursor/ayuda.cur), pointer;
 	display: block;
 	line-height: 30px;
 	text-align: center;
