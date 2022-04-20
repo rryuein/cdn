@@ -862,8 +862,8 @@ input:-webkit-autofill {
 }
 
 ::selection {
-    background: #444;
-    color: #fff
+    background: #eae2e2;
+    color: #000
 }
 
 ::-moz-selection {
@@ -9168,7 +9168,7 @@ a.toc-link {
     content: attr(data-rel);
     height: 38px;
     line-height: 38px;
-    background: #21252b;
+    /*background: #21252b;*/
     font-size: 16px;
     position: absolute;
     margin-top: -35px;
@@ -9766,7 +9766,7 @@ td.hljs-ln-numbers {
 }
 
 .entry-content pre.highlight-wrap .copy-code {
-    color: #fff;
+    color: #f0bbbb;
     position: absolute;
     float: right;
     right: 10px;
