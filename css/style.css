@@ -2967,7 +2967,7 @@ h1.page-title.mb- {
 }
 
 .post-footer {
-    padding: 20px 0;
+    padding: 12px 0;
     border-bottom: 1px dashed #ddd;
     border-top: 1px dashed #ddd;
     margin-top: 30px;
@@ -9109,7 +9109,7 @@ a.toc-link {
 
 .highlight-wrap {
     position: relative;
-    background: #21252b;
+    background: #ffffffa3;
     border-radius: 5px;
     font: 15px/22px "Microsoft YaHei", "Arial", Sans-Serif;
     line-height: 1.6;
