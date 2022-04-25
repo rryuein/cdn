@@ -3320,16 +3320,16 @@ h1.page-title.mb- {
 }
 
 .author-profile .meta h3 {
-    margin: 10px 0 0;
+    margin: 0px 0 0;
     text-transform: none
 }
 
 .author-profile .meta h3 a {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 1px;
-    color: #ababab
+    letter-spacing: 0px;
+    color: #ff9999c7
 }
 
 .author-profile .meta .title {
@@ -3338,8 +3338,8 @@ h1.page-title.mb- {
 
 .author-profile p {
     font-size: 13px;
-    line-height: 30px;
-    margin: 15px 0 0;
+    line-height: 15px;
+    margin: 6px 0 0;
     color: #7d8588;
     letter-spacing: 0;
     display: inline-block;
