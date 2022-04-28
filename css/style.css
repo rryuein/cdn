@@ -2032,7 +2032,7 @@ a:active {
     width: 30px;
     height: 33px;
     margin-top: 4.5px;
-    cursor: pointer;
+    cursor: url(https://cdn.jsdelivr.net/gh/rryuein/cdn/img/cursor/ayuda.cur), pointer;
     z-index: 999
 }
 
@@ -5285,7 +5285,7 @@ li.feature-2 {
 
 i.iconfont.js-toggle-search.iconsearch {
     color: #666;
-    cursor: pointer;
+    cursor: url(https://cdn.jsdelivr.net/gh/rryuein/cdn/img/cursor/ayuda.cur), pointer;
     font-size: 26px;
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out
@@ -7878,7 +7878,7 @@ input[type=radio]:checked:before {
     visibility: hidden;
     white-space: nowrap;
     padding: 10px 10px;
-    cursor: pointer;
+    cursor: url(https://cdn.jsdelivr.net/gh/rryuein/cdn/img/cursor/ayuda.cur), pointer;
     border-radius: 10px 10px 0 0
 }
 
@@ -9414,7 +9414,7 @@ a.toc-link {
     width: 36px;
     background-color: #f5f5f5;
     border-radius: 50%;
-    cursor: pointer
+    cursor: url(https://cdn.jsdelivr.net/gh/rryuein/cdn/img/cursor/ayuda.cur), pointer;
 }
 
 .menu-list li:hover {
@@ -9441,7 +9441,7 @@ a.toc-link {
     margin: 0 4px;
     box-shadow: none;
     background-color: #f5f5f5;
-    cursor: pointer
+    cursor: url(https://cdn.jsdelivr.net/gh/rryuein/cdn/img/cursor/ayuda.cur), pointer;
 }
 
 .font-family-controls button.selected {
