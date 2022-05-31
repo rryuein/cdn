@@ -6852,16 +6852,16 @@ i.iconfont.down {
 
 .single-reward .reward-open {
     position: relative;
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
+    width: 60px;
+    height: 60px;
+    /* font-size: 18px;
     padding: 7px;
-    color: #fff;
+    color: #fff; */
     text-align: center;
     display: inline-block;
-    border-radius: 100%;
+    /* border-radius: 100%;
     background: #d34836;
-    cursor: pointer
+    cursor: pointer */
 }
 
 .single-reward .reward-main {
