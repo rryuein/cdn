@@ -1261,7 +1261,8 @@ html {
 
 *:before,
 *:after {
-    box-sizing: inherit
+    box-sizing: inherit;
+    top: 10px;
 }
 
 body {
@@ -2175,12 +2176,12 @@ a:active {
 
 .feature i {
     position: absolute;
-    top: 3px;
-    left: 3px;
+    top: 0px;
+    left: -5px;
     font-size: 25px;
     color: white;
-    width: 94px;
-    height: 94px;
+    width: 12px;
+    height: 120px;
     line-height: 94px;
     text-align: center;
     background: #bbe2db;
