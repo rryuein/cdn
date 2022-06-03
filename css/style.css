@@ -1262,7 +1262,6 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
-    top: 10px;
 }
 
 body {
@@ -2180,9 +2179,9 @@ a:active {
     left: -5px;
     font-size: 25px;
     color: white;
-    width: 12px;
+    width: 120px;
     height: 120px;
-    line-height: 94px;
+    line-height: 120px;
     text-align: center;
     background: #bbe2db;
     border-radius: 50%;
@@ -9132,7 +9131,7 @@ a.toc-link {
     text-shadow: none;
     color: #000;
     padding-top: 30px;
-    box-shadow: 0 10px 30px 0 rgba(0, 0, 0, .4)
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, .4)
 }
 
 .highlight .line span::-moz-selection,
