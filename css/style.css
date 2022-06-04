@@ -7943,10 +7943,6 @@ input[type=radio]:checked:before {
     }
 }
 
-.changeSkin-gear span:before {
-    content: "切换主题 | Change Skin "
-}
-
 @media(max-width:800px) {
     .changeSkin-gear span::before {
         content: ""
