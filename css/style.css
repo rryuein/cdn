@@ -766,7 +766,6 @@
     z-index: 9999
 }
 
-@charset "utf-8";
 
 #content {
     animation: main 1s;
@@ -2793,14 +2792,33 @@ i.iconfont.hotpost {
     border-radius: 5px
 }
 
-.entry-content a {
-    color: #e67474;
-    text-decoration: underline dotted rgba(0, 0, 0, .1)
-}
-
 .entry-content a:hover {
-    color: orange;
     text-decoration: underline orange
+}
+@charset "UTF-8";
+.entry-content a{
+    color:#e67474;
+    position:relative;
+}
+.entry-content a:hover{
+    color:orange;
+    text-decoration:none
+}
+.entry-content a:after{
+    content:'';
+    position:absolute;
+    width: 97%;
+    transform:scaleX(0);
+    height:2px;
+    bottom:0;
+    left:0;
+    background-color:orange;
+    transform-origin:bottom right;
+    transition:transform .25s ease-out;
+}
+.entry-content a:hover:after{
+    transform:scaleX(1);
+    transform-origin:bottom left
 }
 
 h1.entry-title {
@@ -2832,11 +2850,8 @@ h1.entry-title {
 }
 
 .entry-content p {
-    color: #797979
-}
-
-.entry-content p {
-    line-height: 30px
+    color: #797979;
+    line-height: 30px;
 }
 
 .entry-content hr {
@@ -2911,11 +2926,11 @@ h1.page-title.mb- {
     z-index: 99;
     width: 70px;
     height: 900px;
-    background: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/other/scroll.png) no-repeat center;
+    background: url(https://cdn.jsdelivr.net/gh/rryuein/cdn/img/other/scroll.png) no-repeat center;
     background-size: contain;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
-    cursor: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/No_Disponible.cur), auto;
+    cursor: url(https://cdn.jsdelivr.net/gh/rryuein/cdn/img/cursor/No_Disponible.cur), auto;
     opacity: 1
 }
 
@@ -7926,11 +7941,6 @@ input[type=radio]:checked:before {
     .changeSkin-gear i {
         font-size: 20px
     }
-}
-
-position:relative;
-z-index:99;
-cursor:pointer
 }
 
 .changeSkin-gear span:before {
