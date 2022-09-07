@@ -1322,7 +1322,6 @@ img {
 }
 
 table {
-    table-layout: fixed;
     width: 1000px; /*表格宽度*/
     max-width: 1000px; /*表格最大宽度，避免表格过宽*/
     border: 1px solid #dedede; /*表格外边框设置*/
@@ -1334,8 +1333,7 @@ table {
 }
 table th,
 table td {
-    height: 35px; /*统一每一行的默认高度*/
-    border: 1px solid #dedede; /*内部边框样式*/
+    height: 30px; /*统一每一行的默认高度*/
     padding: 0 10px; /*内边距*/
 }
 table th {
