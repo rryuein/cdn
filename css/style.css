@@ -2886,6 +2886,7 @@ h1.entry-title {
 .entry-content p {
     color: #797979;
     line-height: 30px;
+    text-align:justify
 }
 
 .entry-content hr {
