@@ -2762,7 +2762,8 @@ i.iconfont.hotpost {
 }
 
 .entry-content {
-    position: relative
+    position: relative;
+    margin: 0 15px 0 15px
 }
 
 .entry-content h3 {
