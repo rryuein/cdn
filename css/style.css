@@ -1132,7 +1132,7 @@ blockquote {
     display: block;
     background: (255,255,255,1);
     padding: 15px 20px 15px 45px;
-    margin: 0 0 20px;
+    margin: 25px 10px 20px 10px;
     position: relative;
     font-family: Georgia, serif;
     font-size: 16px;
@@ -1931,10 +1931,10 @@ a:active {
     opacity: 1
 }
 
-//site-description {
-//    float: right
-//}
-
+/*site-description {
+    float: right
+}
+*/
 .header-focus {
     height: 250px;
     background: #f9f9f9;
@@ -2741,9 +2741,9 @@ i.iconfont.hotpost {
 .entry-content ul {
     list-style: disc;
     border: 1px dashed #e4e4e4;
-    padding: 15px 10px 15px 50px;
+    padding: 15px 10px 13px 40px;
     color: #616161;
-    margin-left: 0;
+    margin: 0px 10px 20px 10px;
     border-radius: 10px
 }
 
@@ -2763,7 +2763,6 @@ i.iconfont.hotpost {
 
 .entry-content {
     position: relative;
-    margin: 0 15px 0 15px
 }
 
 .entry-content h3 {
@@ -2887,7 +2886,8 @@ h1.entry-title {
 .entry-content p {
     color: #797979;
     line-height: 30px;
-    text-align:justify
+    text-align:justify;
+    margin: 0px 25px 0 25px;
 }
 
 .entry-content hr {
@@ -9167,7 +9167,7 @@ a.toc-link {
     border-radius: 5px;
     font: 0px/22px "Microsoft YaHei", "Arial", Sans-Serif;
     line-height: 1.6;
-    margin-bottom: 1.6em;
+    margin: 15px 10px 16px 10px;
     max-width: 100%;
     overflow: auto;
     text-shadow: none;
