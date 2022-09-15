@@ -1,4 +1,3 @@
-;
 var _typeof = typeof Symbol === 'function' && typeof Symbol.iterator === 'symbol' ? function (a) {
   return typeof a
 } : function (a) {
@@ -272,11 +271,11 @@ function code_highlight_style () {
   for (var i = 0; i < $('article pre').length; i++) {
     gen_top_bar(i)
   }
-/*   $('pre').on('click', function (e) {
+  $('pre').on('click', function (e) {
     if (e.target !== this) return
     $(this).toggleClass('code-block-fullscreen')
     $('html').toggleClass('code-block-fullscreen-html-scroll')
-  }) */
+  })
   hljs.initLineNumbersOnLoad()
 }
 try {
@@ -1048,8 +1047,8 @@ mashiro_global.ini.normalize()
 var home = location.href,
   s = $('#bgvideo')[0],
   Siren = {
-    BSZ: function() {
-      $.getScript('//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js')
+   BSZ: function() {
+      $.getScript('https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js')
     },
     TOC: function () {
       if ($('.toc').length > 0 && document.body.clientWidth > 1200) {
