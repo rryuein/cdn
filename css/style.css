@@ -1339,11 +1339,11 @@ table td {
 table th {
     font-weight: bold; /*加粗*/
     text-align: center !important; /*内容居中，加上 !important 避免被 Markdown 样式覆盖*/
-    background: rgba(158,188,226,0.2); /*背景色*/
+    background: rgb(255 248 231 / 55%); /*背景色*/
 }
 
 table tbody tr:nth-child(2n) {
-    background: rgba(158,188,226,0.12);
+    background: rgb(255 224 224 / 25%);
 }
 
 table th {
@@ -3146,6 +3146,7 @@ h1.page-title.mb- {
     cursor: pointer;
     opacity: .6;
     float: right;
+    cursor:url(https://cdn.jsdelivr.net/gh/rryuein/cdn/img/cursor/ayuda.cur),pointer;
     -moz-transition: opacity .1s ease-out;
     -o-transition: opacity .1s ease-out;
     -webkit-transition: opacity .1s ease-out;
