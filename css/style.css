@@ -2784,7 +2784,12 @@ i.iconfont.hotpost {
 .entry-content ul li {
     padding: 8px 0
 }
-
+.entry-content ul li {
+    color: #797979;
+    line-height: 33px;
+    text-align: justify;
+    margin: 0px 15px 0px 15px;
+}
 .entry-content {
     position: relative;
 }
