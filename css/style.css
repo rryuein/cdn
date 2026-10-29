@@ -1912,7 +1912,6 @@ a:active {
     line-height: 75px;
     margin-left: -6px;
     margin-top: -8px;
-    width: 12%;
 }
 
 .site-title {
@@ -7285,19 +7284,6 @@ button.botui-actions-buttons-button {
     background: #d34836;
     transform: rotateX(90deg) translate3d(0, 0, 30px);
     -webkit-transform: rotateX(90deg) translate3d(0, 0, 30px)
-}
-
-.logolink a {
-    color: #464646;
-    float: left;
-    font-size: 20px;
-    font-weight: 800;
-    height: 56px;
-    line-height: 56px;
-    padding-left: 35px;
-    padding-right: 15px;
-    padding-top: 11px;
-    text-decoration-line: none
 }
 
 .logolink .sakurasono {
