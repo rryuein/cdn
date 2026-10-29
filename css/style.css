@@ -779,10 +779,6 @@
     animation: header 1s
 }
 
-.site-branding {
-    animation: sitetop 1s
-}
-
 .searchbox,
 .site-top .lower,
 .header-user-avatar {
@@ -849,13 +845,18 @@ html {
     font-family: sans-serif;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    overflow-x: hidden
+    overflow-x: hidden;
+    box-sizing: border-box
 }
 
 body {
     margin: 0;
     font: 300 17px;
-    text-shadow: 0 0 1px rgba(0, 0, 0, .1)
+    text-shadow: 0 0 1px rgba(0, 0, 0, .1);
+    background: url(https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    cursor: url(https://cdn.jsdelivr.net/gh/rryuein/cdn/img/cursor/normal.cur), auto;
 }
 body::after{
     content: "";
@@ -1097,13 +1098,15 @@ legend {
 }
 
 textarea {
-    overflow: auto
+    overflow: auto;
+    padding-left: 3px;
+    width: 100%;
+    color: #a5a5a5
 }
 
 optgroup {
     font-weight: bold
 }
-
 
 td,
 th {
@@ -1169,28 +1172,6 @@ blockquote {
     box-shadow: 2px 2px 15px #ccc;
 }
 
-/* blockquote:before {
-    content: "\f10d" !important;
-    左双引号的Unicode编码
-
-    font-size: 1rem;
-    position: absolute;
-    top: -15px;
-    left: 12px;
-    color: orange;
-    font-family: FontAwesome
-}
-
-blockquote:after {
-    content: '\f10e' !important;
-    font-size: 1rem;
-    position: absolute;
-    bottom: -15px;
-    right: 5px;
-    color: orange;
-    font-family: FontAwesome
-}
-*/
 blockquote p {
     margin: 5px 0 5px 0px !important;
 }
@@ -1250,10 +1231,6 @@ big {
     font-size: 125%
 }
 
-html {
-    box-sizing: border-box
-}
-
 * {
     box-sizing: border-box
 }
@@ -1261,13 +1238,6 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
-}
-
-body {
-    background: url(https://cdn.jsdelivr.net/gh/Tokisaki-Galaxy/res/site/medias/background.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    cursor: url(https://cdn.jsdelivr.net/gh/rryuein/cdn/img/cursor/normal.cur), auto;
 }
 
 q:before,
@@ -1462,12 +1432,6 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"] {
     padding: 3px
-}
-
-textarea {
-    padding-left: 3px;
-    width: 100%;
-    color: #a5a5a5
 }
 
 a {
@@ -1674,10 +1638,6 @@ a:active {
     display: block
 }
 
-.single-center::after {
-    display: none
-}
-
 .pattern-center header.single-header {
     max-width: 900px;
     padding: 0 10px;
@@ -1687,35 +1647,6 @@ a:active {
     top: 400px;
     left: -140px;
     bottom: 20px
-}
-
-.single-center .single-header h1.entry-title {
-    margin: 0;
-    font-size: 32px;
-    width: 100%
-}
-
-.single-center .entry-census {
-    color: #fff;
-    font-size: 14px;
-    padding: 18px 0 0;
-    line-height: 39px
-}
-
-.single-center .entry-census .bull {
-    margin: 0 5px
-}
-
-.single-center .entry-census span img {
-    width: 35px;
-    height: 35px;
-    border-radius: 100%;
-    float: left;
-    margin-right: 12px
-}
-
-.single-center .entry-census a {
-    color: #fff
 }
 
 @media(max-width:860px) {
@@ -1742,11 +1673,6 @@ a:active {
     overflow: hidden;
     margin: 0 auto
 }
-
-/* .pattern-center-blank {
-    padding-top: 75px;
-    background-color: #fff
-} */
 
 @media(max-width:860px) {
     .pattern-center-sakura {
@@ -1906,6 +1832,7 @@ a:active {
 }
 
 .site-branding {
+    animation: sitetop 1s;
     float: left;
     position: relative;
     height: 75px;
@@ -1940,10 +1867,6 @@ a:active {
     opacity: 1
 }
 
-/*site-description {
-    float: right
-}
-*/
 .header-focus {
     height: 250px;
     background: #f9f9f9;
@@ -1997,14 +1920,6 @@ a:active {
     transform: translateY(0%);
   }
 @media(max-width:1200px) {
-    /* .site-top .lower {
-        right: -26% 
-    }
-
-    .site-top .lower-cantiner {
-         left: 0 
-    }*/
-
     .site-top .lower nav.hide {
         display: none !important
     }
@@ -3181,12 +3096,6 @@ h1.page-title.mb- {
     transition: opacity .1s ease-out
 }
 
-.post-share:hover .show-share,
-.post-share:hover .sharehidden {
-    opacity: 1;
-    display: inline-block
-}
-
 .post-squares {
     overflow: hidden;
     width: 100%;
@@ -3689,7 +3598,8 @@ h3#comments-list-title {
 .alignright {
     display: inline;
     float: right;
-    margin-left: 1.5em
+    margin-left: 1.5em;
+    width: auto !important
 }
 
 .aligncenter {
@@ -4194,7 +4104,8 @@ a.page-numbers {
     overflow: hidden;
     -webkit-transition: height 0s ease-out;
     -moz-transition: height 0s ease-out;
-    transition: height 0s ease-out
+    transition: height 0s ease-out;
+    display: block !important;
 }
 
 .comments ul.commentwrap {
@@ -5243,18 +5154,6 @@ li.feature-2 {
     background: none
 }
 
-.qqInner {
-    width: 121px;
-    height: 121px;
-    padding: 10px;
-    background: rgba(0, 0, 0, .4);
-    top: 40px;
-    left: -40px;
-    -webkit-transform: translate3d(0, 50px, 0);
-    transform: translate3d(0, 50px, 0);
-    opacity: 0
-}
-
 .qqInner:before {
     content: "";
     position: absolute;
@@ -5267,6 +5166,15 @@ li.feature-2 {
 }
 
 .qqInner {
+    width: 121px;
+    height: 121px;
+    padding: 10px;
+    background: rgba(0, 0, 0, .4);
+    top: 40px;
+    left: -40px;
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px, 0);
+    opacity: 0;
     position: absolute;
     border-radius: 8px;
     transition: .7s all ease;
@@ -5803,7 +5711,9 @@ i.iconfont.down {
     -webkit-box-shadow: 0 0 4px rgba(255, 165, 0, .85);
     -moz-box-shadow: 0 0 4px rgba(255, 165, 0, .85);
     -o-box-shadow: 0 0 4px rgba(255, 165, 0, .85);
-    box-shadow: 0 0 4px rgba(255, 165, 0, .85)
+    box-shadow: 0 0 4px rgba(255, 165, 0, .85);
+    border: 1px solid orange;
+    color: orange
 }
 
 #pagination a {
@@ -5816,11 +5726,6 @@ i.iconfont.down {
 #pagination span {
     color: #989898;
     font-size: 15px
-}
-
-#pagination a:hover {
-    border: 1px solid orange;
-    color: orange
 }
 
 #pagination .loading {
@@ -6942,33 +6847,12 @@ i.iconfont.down {
     cursor: wait
 }
 
-.botui-container {
-    font-size: 14px;
-    background-color: rgba(255, 255, 255, 0)
-}
-
 .botui-messages-container {
     padding: 10px 20px
 }
 
 .botui-actions-container {
     padding: 10px 20px
-}
-
-.botui-message {
-    min-height: 30px
-}
-
-.botui-message-content {
-    padding: 7px 13px;
-    border-radius: 15px;
-    color: #595a5a;
-    background-color: #ebebeb
-}
-
-.botui-message-content.human {
-    color: #f7f8f8;
-    background-color: #919292
 }
 
 .botui-message-content.text {
@@ -6984,10 +6868,6 @@ i.iconfont.down {
 .botui-message-content.embed {
     padding: 5px;
     border-radius: 5px
-}
-
-.botui-message-content-link {
-    color: #919292
 }
 
 .botui-actions-text-input {
@@ -7196,21 +7076,29 @@ button.botui-actions-buttons-button {
     width: 100%;
     height: 100%;
     overflow-y: auto;
-    overflow-x: hidden
+    overflow-x: hidden;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0)
 }
 
 .botui-message {
     margin: 10px 0;
-    min-height: 20px
+    min-height: 20px;
 }
 
 .botui-message-content {
+    padding: 7px 13px;
+    border-radius: 15px;
+    color: #595a5a;
+    background-color: #ebebeb;
     width: auto;
     max-width: 85%;
     display: inline-block
 }
 
 .botui-message-content.human {
+    color: #f7f8f8;
+    background-color: #919292;
     float: right;
     margin-bottom: 12.2px
 }
@@ -7227,7 +7115,8 @@ button.botui-actions-buttons-button {
 }
 
 .botui-message-content-link {
-    text-decoration: underline
+    text-decoration: underline;
+    color: #919292
 }
 
 .botui-actions-buttons-button+.botui-actions-buttons-button {
@@ -7354,24 +7243,6 @@ button.botui-actions-buttons-button {
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
     -webkit-transition: .05s border-color ease-in-out;
     transition: .05s border-color ease-in-out
-}
-
-.forgetmenot input[type=checkbox]:checked:before {
-    content: "✔";
-    margin: -3px 0 0 -4px;
-    color: #1e8cbe
-}
-
-.forgetmenot input[type=checkbox]:checked:before,
-input[type=radio]:checked:before {
-    float: left;
-    display: inline-block;
-    vertical-align: middle;
-    width: 16px;
-    font: 400 21px/1 dashicons;
-    speak: none;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
 }
 
 .forgetmenot input[type=checkbox]:checked:before {
@@ -7865,15 +7736,6 @@ input[type=radio]:checked:before {
     transition-duration: .3s, .3s
 }
 
-.changeSkin .keys {
-    position: relative;
-    z-index: 99
-}
-
-.changeSkin .keys span {
-    cursor: pointer
-}
-
 .changeSkin-gear {
     position: fixed;
     bottom: -999px;
@@ -7906,20 +7768,6 @@ input[type=radio]:checked:before {
 .keys-line-add {
     text-align: right;
     margin-right: 22px
-}
-
-@media(max-width:800px) {
-    .changeSkin-gear span::before {
-        content: ""
-    }
-
-    .changeSkin i {
-        font-size: 20px
-    }
-
-    .changeSkin-gear i {
-        font-size: 20px
-    }
 }
 
 @media(max-width:800px) {
@@ -8383,41 +8231,6 @@ li>ol {
     background: #0bf
 }
 
-
-/* .is-collapsible {
-    max-height: 1000px;
-    overflow: hidden;
-    transition: all 300ms ease-in-out
-}
-
-.is-collapsed {
-    max-height: 0
-}
-
-.is-position-fixed {
-    position: fixed !important;
-    top: 0
-}
-
-.is-active-link {
-    font-weight: 700
-}
-
-.toc-link::before {
-    background-color: #EEE;
-    content: ' ';
-    display: inline-block;
-    height: inherit;
-    left: 0;
-    margin-top: -1px;
-    position: absolute;
-    width: 2px
-}
-
-.is-active-link::before {
-    background-color: orange !important
-} */
-
 .flipx {
     -moz-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
@@ -8504,10 +8317,7 @@ li>ol {
     -webkit-animation: im-emotion-step 1.08s steps(27) infinite;
     animation: im-emotion-step 1.08s steps(27) infinite;
     animation-duration: 1.08s;
-    animation-timing-function: steps(27)
-}
-
-.emotion-item .img {
+    animation-timing-function: steps(27);
     width: 32px;
     height: 864px;
     max-width: 32px;
@@ -8645,10 +8455,6 @@ li>ol {
 .emoji-item,
 .tieba-container span {
     cursor: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/No_Disponible.cur), auto
-}
-
-.alignright {
-    width: auto !important
 }
 
 .no-select {
@@ -9215,10 +9021,6 @@ li>ol {
 
 .hljs-link {
     text-decoration: underline
-}
-
-.hljs-ln {
-    margin: 6px 0 0 0 !important
 }
 
 .highlight td.numbers {
@@ -10043,10 +9845,6 @@ i.iconfont.js-toggle-search.iconsearch:hover,
     color: #FE9600
 }
 
-.comments .comments-main {
-    display: block !important;
-}
-
 .comments .comments-hidden {
     display: none !important;
     background-position: center;
@@ -10054,6 +9852,7 @@ i.iconfont.js-toggle-search.iconsearch:hover,
 }
 
 .hljs-ln {
+    margin: 6px 0 0 0 !important;
     border-collapse: collapse;
     cursor: url(https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cursor/texto.cur), auto
 }
