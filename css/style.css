@@ -8476,6 +8476,9 @@ li>ol {
     z-index: 99999
 }
 
+.footer-device{
+    margin-top: 20px;
+}
 #footer-sponsor {
     font-size: 9px
 }
